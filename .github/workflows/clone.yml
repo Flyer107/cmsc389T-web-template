@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: clone workflow
+name: Clone workflow
 
 # Controls when the workflow will run
 on:
@@ -28,6 +28,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            ssh-keyscan -H github.com >> ~${{ secrets.USERNAME }}.ssh/known_hosts
+            ssh-keyscan -H github.com >> ~${{ secrets.USERNAME }}/.ssh/known_hosts
             git clone git@github.com:Flyer107/cmsc389T-web-template.git
 
