@@ -31,11 +31,12 @@ html, body {
     background-color: rgba(255, 255, 255, 0.3)
 }
 
+
 .main-nav {
     text-align: center;
     font-size: 1.5em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-nav li {
@@ -44,6 +45,7 @@ html, body {
 
 .main-header {
     background-color: red;
+    /* assets/header.jpg; */
     background-image: url('https://www.databankimx.com/wp-content/uploads/2015/07/Microsoft-Cloud-Offerings.jpg');
     background-blend-mode: multiply;
     background-size: cover;
@@ -77,11 +79,13 @@ html, body {
 }
 
 .content-section {
+    background-color:#F9F6EE;
     margin: 1em;
 
 }
 
 .container {
+    color: black;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
@@ -113,7 +117,7 @@ html, body {
 }
 
 .main-footer {
-    background-color: red;
+    background-color: rgb(163, 13, 13);
     color: white;
     position: fixed;
     bottom: 0;
