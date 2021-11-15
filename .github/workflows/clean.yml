@@ -25,7 +25,7 @@ jobs:
         uses: appleboy/ssh-action@master
         #uses: actions/checkout@v2
         with:
-          host: $ {{ secrets.HOST }}
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
