@@ -3,6 +3,14 @@ version: '3'
 services:
   nodejs:
     #fill out the configuration here
+    build:
+      context: .
+      # built using custom Dockerfile
+      dockerfile: Dockerfile
+      # tagged with custom name
+    container_name: KO_Site
+    # If fails or crashes, restart container and try again
+    restart: unless-stopped
     networks:
       - app-network
   
@@ -28,7 +36,9 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /absolute/path/to/web/template/folder
+      # device: /absolute/path/to/web/template/folder
+      # device: C:/Users/12407/Desktop/cmsc389T/cmsc389T-web-template
+      device: C://Users//12407//Desktop//cmsc389T//cmsc389T-web-template
       o: bind
 
 networks:
