@@ -28,6 +28,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            ssh-keyscan -H github.com >> ~1.ssh/known_hosts
+            ssh-keyscan -H github.com >> ~${{ secrets.USERNAME }}.ssh/known_hosts
             git clone git@github.com:Flyer107/cmsc389T-web-template.git
 
