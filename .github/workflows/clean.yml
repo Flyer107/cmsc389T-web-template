@@ -22,7 +22,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Clean dir
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        uses: actions/checkout@v2
+        uses: appleboy/ssh-action@master
+        #uses: actions/checkout@v2
         with:
           host: $ {{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
