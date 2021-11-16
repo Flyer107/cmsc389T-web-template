@@ -29,5 +29,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ssh-keyscan -H github.com >> ~${{ secrets.USERNAME }}/.ssh/known_hosts
+            cd ../pub
             git clone git@github.com:Flyer107/cmsc389T-web-template.git
 
