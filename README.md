@@ -8,4 +8,3 @@ https://terpconnect.umd.edu/~kowubah/cmsc389T-web-template/index.html [Terpconne
 
 1. Color for the container section was changed from white to bone-white.
 2. Footer background color was changed to a darker red.
-
